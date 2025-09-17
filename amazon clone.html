@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #232f3e;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar .logo img {
+            width: 100px;
+            height: auto;
+
+        }
+
+        .navbar .search-bar {
+            flex: 1;
+            display: flex;
+            margin: 0 20px;
+        }
+
+        .navbar .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .navbar .search-bar button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #febd69;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        .navbar .cart {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .cart img {
+            width: 30px;
+            margin-right: 5px;
+        }
+
+        .hero {
+            background-image: url("hero_image.jpg");
+            height: 350px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+        }
+
+        .hero-message {
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            height: 40px;
+            display: flex;
+            font-size: 0.85rem;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        .hero-message a {
+            color: #007185;
+            cursor: pointer;
+        }
+
+        .shop-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: #232f3e;
+        }
+
+        .BOX {
+            height: 350px;
+            /* border: 2PX solid black; */
+            width: 23%;
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            /* padding: 20px 0px 15px; */
+        }
+
+        .box-img {
+            height: 250px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 1rem;
+            /* margin-bottom: 1.5rem; */
+        }
+
+        .box-content{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .box-content p{
+            color: #007185;
+            cursor: pointer;
+        }
+
+        footer{
+            margin-top: 10px;
+        }
+
+        .foot-panel1{
+            background-color: #37475a;
+            color: white;
+            height: 50px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-size: 1rem;
+        }
+
+        .foot-pannel2{
+            display: flex;
+            background-color: #222f3d;
+            color: white;
+            height: 300px;
+            justify-content: space-evenly;
+            
+        }
+
+        ul{
+            margin-top: 20px;
+        }
+
+        ul a{
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #dddddd;
+         }
+
+         .foot-panel3{
+            background-color: #222f3d;
+            color: white;
+            border-top: 0.5px solid white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+         }
+
+         .logoo{
+            background-image: url('amazon logo.png');
+            background-size: cover;
+            height: 80px;
+            width: 100px;
+         }
+
+         .foot-panel4{
+            background-color: #0f1111;
+            color: white;
+            height: 80px;
+            font-size: 0.8rem;
+            text-align: center;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+         }
+
+         .pages{
+            padding-top: 25px;
+         }
+
+         .copyright{
+            padding-top: 7px;
+            
+         }
+       
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="amazon logo.png" alt="Amazon Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="nav-links">
+            <a href="#">Sign In</a>
+            <a href="#">Orders</a>
+
+        </div>
+        <div class="cart">
+            <img src="https://cdn-icons-png.flaticon.com/512/1170/1170576.png" alt="Cart Icon">
+            <a href="#">Cart</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-message">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci ad commodi, modi libero
+                consequatur Click here to go  <a>WWW.amazon.com</a></p>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="box1 BOX">
+            <div class="box-content">
+                <h2>Healt & Personal Care</h2>
+                <div class="box-img" style="background-image: url('box1_image\ \(1\).jpg');"></div>
+                <p><a>See More</a></p>
+            </div>
+
+        </div>
+
+
+        <div class="box2 BOX">
+            <div class="box-content">
+                <h2>Toothpaste</h2>
+                <div class="box-img" style="background-image: url('box2_image\ \(1\).jpg');"></div>
+                <p><a>See More</a></p>
+            </div>
+        </div>
+
+
+        <div class="box3 BOX">
+            <div class="box-content">
+                <h2>Furnitures</h2>
+                <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                <p><a>See More</a></p>
+            </div>
+        </div>
+
+
+        <div class="box4 BOX">
+            <div class="box-content">
+                <h2>New Mobile</h2>
+                <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                <p><a>See More</a></p>
+            </div>
+        </div>
+
+        <div class="box5 BOX">
+            <div class="box-content">
+                <h2>Beauty Products</h2>
+                <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <p><a>See More</a></p>
+            </div>
+
+        </div>
+
+
+        <div class="box6 BOX">
+            <div class="box-content">
+                <h2> Toys</h2>
+                <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                <p><a>See More</a></p>
+            </div>
+        </div>
+
+
+        <div class="box7 BOX">
+            <div class="box-content">
+                <h2>Healt & Personal Care</h2>
+                <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <p><a>See More</a></p>
+            </div>
+        </div>
+
+
+        <div class="box8 BOX">
+            <div class="box-content">
+                <h2> Trending Clothes</h2>
+                <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <p><a>See More</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-page">
+
+    </div>
+
+
+    <footer>
+        <div class="foot-panel1">
+            <p>Back to top</p>
+        </div>
+
+        <div class="foot-pannel2">
+            <ul>
+                <p> Get to know Us</p>
+                <a>Careers</a>
+                <a>Blogs</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+                </ul>
+
+            <ul>
+                <p> Get to know Us</p>
+                <a>Careers</a>
+                <a>Blogs</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+                </ul>
+
+            <ul>
+                <p> Get to know Us</p>
+                <a>Careers</a>
+                <a>Blogs</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+                </ul>
+
+            <ul>
+                <p> Get to know Us</p>
+                <a>Careers</a>
+                <a>Blogs</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+                </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logoo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                1996-2023,Amazon.com, Inc, or its affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
